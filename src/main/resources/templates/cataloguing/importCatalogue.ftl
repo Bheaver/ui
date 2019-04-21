@@ -36,26 +36,31 @@
                                 <label>MARC Record</label>
                                 <textarea class="form-control" rows="6" id="rawRecordTextArea"></textarea>
                             </div>
-                            <button class="btn btn-circle btn-primary" id="importButton">Import</button>
+                            <div class="form-body">
+                                <button class="btn blue btn-outline" id="importButton">Import</button>
+                            </div>
                         </div>
-                        <div class="portlet-title">
-                            <div class="caption">
-                                <i class="fa fa-comments"></i>Records</div>
-                        </div>
-                        <div class="portlet-body" style="display: block;">
-                            <div class="table-scrollable">
-                                <table class="table table-striped table-hover">
-                                    <thead>
+                        <hr/>
+                        <div class="portlet box green">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-comments"></i>Records</div>
+                            </div>
+                            <div class="portlet-body" style="display: block;">
+                                <div class="table-scrollable">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
                                         <tr>
                                             <th> # </th>
                                             <th> Records </th>
                                             <th> Actions </th>
                                         </tr>
-                                    </thead>
-                                    <tbody>
+                                        </thead>
+                                        <tbody id="tableBody">
 
-                                    </tbody>
-                                </table>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -67,13 +72,47 @@
             </div>
         </div>
         <!-- END CONTAINER -->
-
+        <!--ViewDialog-->
+        <div class="modal fade" id="viewRecord" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">View Record</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="note note-info">
+                            <h4 class="block">Leader</h4>
+                            <p id="leaderContent"> Duis mollis, est non commodo luctus, nisi erat porttitor ligula, mattis consectetur purus sit amet eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. </p>
+                        </div>
+                        <div class="note note-info">
+                            <h4 class="block">Control fields</h4>
+                            <p id="controlFieldsContent"> Duis mollis, est non commodo luctus, nisi erat porttitor ligula, mattis consectetur purus sit amet eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. </p>
+                        </div>
+                        <div class="note note-info">
+                            <h4 class="block">Data fields</h4>
+                            <p id="dataFieldsContent"> Duis mollis, est non commodo luctus, nisi erat porttitor ligula, mattis consectetur purus sit amet eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. </p>
+                        </div>
+                        <div class="note note-info">
+                            <h4 class="block">Catalogue source's local fields</h4>
+                            <p id="localFieldsContent"> Duis mollis, est non commodo luctus, nisi erat porttitor ligula, mattis consectetur purus sit amet eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END ViewDialog-->
 
         <!--[if lt IE 9]>
-<script src="../assets/global/plugins/respond.min.js"></script>
-<script src="../assets/global/plugins/excanvas.min.js"></script>
-<script src="../assets/global/plugins/ie8.fix.min.js"></script>
-<![endif]-->
+        <script src="../assets/global/plugins/respond.min.js"></script>
+        <script src="../assets/global/plugins/excanvas.min.js"></script>
+        <script src="../assets/global/plugins/ie8.fix.min.js"></script>
+        <![endif]-->
         <!-- BEGIN CORE PLUGINS -->
         <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
         <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
