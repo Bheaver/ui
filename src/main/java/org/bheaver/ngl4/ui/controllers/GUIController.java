@@ -27,4 +27,9 @@ public class GUIController {
         return "importCatalogue";
 
     }
+    @RequestMapping(path = "/primaryCataloguing")
+    public String getPrimaryCataloguing() throws Exception{
+        return "primaryCataloguing";
+    }
+
 }

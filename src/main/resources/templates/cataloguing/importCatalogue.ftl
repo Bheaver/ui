@@ -36,7 +36,7 @@
                                 <label>MARC Record</label>
                                 <textarea class="form-control" rows="6" id="rawRecordTextArea"></textarea>
                             </div>
-                            <div class="form-body">
+                            <div class="form-body" style="text-align: center;">
                                 <button class="btn blue btn-outline" id="importButton">Import</button>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                         <div class="portlet box green">
                             <div class="portlet-title">
                                 <div class="caption">
-                                    <i class="fa fa-comments"></i>Records</div>
+                                    <i class="fa"></i>Records</div>
                             </div>
                             <div class="portlet-body" style="display: block;">
                                 <div class="table-scrollable">

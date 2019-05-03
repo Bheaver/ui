@@ -33,6 +33,11 @@
                                             <span class="title">Import Catalogue records</span>
                                         </a>
                                     </li>
+                                    <li class="nav-item  ">
+                                        <a href="primaryCataloguing" class="nav-link ">
+                                            <span class="title">Primary Cataloguing</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
 

@@ -35,6 +35,7 @@ $(document).ready(function() {
                     window.jwtToken = data.jwtToken;
                     $("#token").val(data.jwtToken)
                     document.cookie = "token="+data.jwtToken;
+                    document.cookie = "libCode="+libCode;
                     $("#LoginSuccessMessage").show();
                     $("#LoginFailedMessage").hide();
                     $("#LoginForm").submit();

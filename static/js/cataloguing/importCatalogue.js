@@ -13,7 +13,6 @@ $(document).ready(function(){
             },
             success: function(data){
                 fillRecordsData(data)
-                console.log(recordsArray);
             },
             error: function(error){
                 console.error(error)

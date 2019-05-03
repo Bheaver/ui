@@ -18,10 +18,10 @@ License: You must have a valid license purchased only from themeforest(the above
 <html lang="en">
     <!--<![endif]-->
     <!-- BEGIN HEAD -->
-
     <#include "pageHeader.ftl">
     <link href="../assets/pages/css/login.min.css" rel="stylesheet" type="text/css" />
     <script src="../js/login/initialLoad.js"></script>
+
     <!-- END HEAD -->
 
     <body class=" login">

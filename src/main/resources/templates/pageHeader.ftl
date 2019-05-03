@@ -18,7 +18,7 @@
         <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN THEME GLOBAL STYLES -->
-        <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="../assets/global/css/components-rounded.min.css" rel="stylesheet" id="style_components" type="text/css">
         <link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
         <!-- END THEME GLOBAL STYLES -->
         <!-- BEGIN THEME LAYOUT STYLES -->
@@ -26,5 +26,7 @@
         <link href="../assets/layouts/layout6/css/custom.min.css" rel="stylesheet" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <!-- END THEME LAYOUT STYLES -->
+
+
         <link rel="shortcut icon" href="favicon.ico" /> </head>
     <!-- END HEAD -->
