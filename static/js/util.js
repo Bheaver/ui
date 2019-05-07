@@ -1,3 +1,5 @@
+var aaURL = "http://localhost:8081"
+var catalogueURL = "http://localhost:8082"
 function getCookie(cname) {
   var name = cname + "=";
   var decodedCookie = decodeURIComponent(document.cookie);

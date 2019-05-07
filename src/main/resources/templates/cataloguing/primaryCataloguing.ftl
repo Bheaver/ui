@@ -144,6 +144,8 @@
         <!-- END CORE PLUGINS -->
         <!-- BEGIN THEME GLOBAL SCRIPTS -->
         <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+        <!--<script src="../assets/global/plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+        <link href="../assets/global/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />-->
         <!-- END THEME GLOBAL SCRIPTS -->
         <!-- BEGIN THEME LAYOUT SCRIPTS -->
         <script src="../assets/layouts/layout6/scripts/layout.min.js" type="text/javascript"></script>
@@ -152,6 +154,7 @@
         <!-- END THEME LAYOUT SCRIPTS -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.full.js"></script>
+
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
@@ -165,10 +168,65 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="selectTag">Select or Search for a Tag</label>
-                            <select id="selectTag" name="tags[]">
+                            <select id="selectTag" name="tags[]" style="width: 100%">
                             </select>
                         </div>
-                        <small id="selectedTagInfo" class="form-text text-muted">Selected tag</small>
+                        <div class="container-fluid">
+                            <div class="col-sm-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Tag information</div>
+                                    <div class="panel-body" id="tagInformation">
+                                        <span class="font-purple-seance" id="tagInformationtag"></span><br>
+                                        <span class="font-blue-chambray font-lg" id="tagInformationdefinition"></span><br>
+                                        <span class="font-blue-steel bold" id="tagInformationdescription"></span><br>
+                                        <span class="font-green-seagreen" id="tagInformationrepeat"></span><br>
+                                        <span class="font-dark" id="tagInformationexample"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Indicator 1</div>
+                                    <div class="panel-body">
+                                        <span class="font-blue-chambray font-lg" id="i1GeneralInformationdefinition"></span><br>
+                                        <span class="font-blue-steel bold" id="i1GeneralInformationdescription"></span><br>
+                                        <select class="selectpicker" data-width="fit" id="indicator1Selection" hidden>
+                                        </select>
+                                        <input type="text" size="1"  id="indicator1Input" hidden>
+                                        <span class="font-blue-chambray font-lg" id="i1Informationdefinition"></span><br>
+                                        <span class="font-blue-steel bold" id="i1Informationdescription"></span><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Indicator 2</div>
+                                    <div class="panel-body">
+                                        <span class="font-blue-chambray font-lg" id="i2GeneralInformationdefinition"></span><br>
+                                        <span class="font-blue-steel bold" id="i2GeneralInformationdescription"></span><br>
+                                        <select class="selectpicker" data-width="fit" id="indicator2Selection" hidden>
+                                        </select>
+                                        <input type="text" size="1"  id="indicator2Input" hidden>
+                                        <span class="font-blue-chambray font-lg" id="i2Informationdefinition"></span><br>
+                                        <span class="font-blue-steel bold" id="i2Informationdescription"></span><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="container-fluid">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Identifier</th>
+                                    <th scope="col">Description</th>
+                                </tr>
+                                </thead>
+                                <tbody id="subFieldData">
+
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
